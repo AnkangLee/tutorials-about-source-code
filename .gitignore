@@ -2,4 +2,4 @@
 
 *.iml
 
-/spring-annotation-tutorial/target/
+*/target
