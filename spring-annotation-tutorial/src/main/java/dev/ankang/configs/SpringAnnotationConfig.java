@@ -21,7 +21,17 @@ public class SpringAnnotationConfig {
      * 之前xml文件中<bean>标签有bean的id，现在注解的方式默认用的是方法名来作为bean的id
      */
     @Bean
-    public Person person(){
+    public Person person() {
         return new Person("zhangsanfeng", 18);
+    }
+
+    /**
+     * 通过这个value属性可以指定bean在IOC容器的id
+     *
+     * @return
+     */
+    @Bean(value = "wuji")
+    public Person child() {
+        return new Person("zhangwuji", 3);
     }
 }

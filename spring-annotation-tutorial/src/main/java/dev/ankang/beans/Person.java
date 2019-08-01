@@ -6,7 +6,6 @@ import lombok.Setter;
 import lombok.ToString;
 
 /**
- *
  * description :
  * last-modified : 2019-08-01
  *
