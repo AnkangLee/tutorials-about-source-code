@@ -1,4 +1,6 @@
+import dev.ankang.beans.Person;
 import dev.ankang.configs.SpringAnnotationConfig;
+import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -11,6 +13,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class TestSpringAnnotationConfig {
 
+    private AnnotationConfigApplicationContext ac;
+
+    @Before
+    public void initSpringContext() {
+        ac = new AnnotationConfigApplicationContext(SpringAnnotationConfig.class);
+    }
+
     /**
      * 注解的方式使用spring
      *
@@ -19,10 +28,19 @@ public class TestSpringAnnotationConfig {
      * 配置类的类型
      */
     @Test
-    public void testSpringAnnotationConfig(){
-        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(SpringAnnotationConfig.class);
+    public void testSpringAnnotationConfig() {
         System.out.println(ac.getBean("person"));
     }
 
+    /**
+     * 获取spring容器中bean的定义信息
+     */
+    @Test
+    public void testGetBeanNamesForTypeFromSpring() {
+        String[] names = ac.getBeanNamesForType(Person.class);
+        for (String name : names) {
+            System.out.println(name);
+        }
+    }
 
 }
