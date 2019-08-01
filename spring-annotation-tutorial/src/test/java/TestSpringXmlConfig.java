@@ -11,10 +11,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestSpringXmlConfig {
 
 
-    @Test
     /**
      * xml 文件配置的方式使用spring
      */
+    @Test
     public void testSpringXmlConfig(){
         ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
         System.out.println(ac.getBean("person"));
