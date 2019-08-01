@@ -1,6 +1,7 @@
 import dev.ankang.configs.ComponentScanConfig;
 import dev.ankang.configs.ComponentScanWithExcludeFilters;
 import dev.ankang.configs.ComponentScanWithIncludeFilters;
+import dev.ankang.configs.ComponentScansConfig;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Configuration;
@@ -46,6 +47,15 @@ public class TestComponentScan {
     @Test
     public void testComponentScanWithIncludeFilters() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(ComponentScanWithIncludeFilters.class);
+        String[] names = ac.getBeanDefinitionNames();
+        for (String name : names) {
+            System.out.println(name);
+        }
+    }
+
+    @Test
+    public void testComponentScans() {
+        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(ComponentScansConfig.class);
         String[] names = ac.getBeanDefinitionNames();
         for (String name : names) {
             System.out.println(name);
