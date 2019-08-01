@@ -1,5 +1,5 @@
 import dev.ankang.beans.Person;
-import dev.ankang.configs.BeanScope;
+import dev.ankang.configs.BeanScopeConfig;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,13 +12,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author LeeAnkang
  * @version 1.0.0
  */
-public class TestBeanScope {
+public class TestBeanScopeConfig {
 
     private AnnotationConfigApplicationContext ac;
 
     @Before
     public void setUp() throws Exception {
-        ac = new AnnotationConfigApplicationContext(BeanScope.class);
+        ac = new AnnotationConfigApplicationContext(BeanScopeConfig.class);
     }
 
     /**
