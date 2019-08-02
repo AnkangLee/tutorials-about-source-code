@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @author LeeAnkang
  * @version 1.0.0
  */
-public class TestComponentScan {
+public class ComponentScanTest {
 
     /**
      * 获取 spring 容器中的所有 beans

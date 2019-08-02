@@ -11,7 +11,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author LeeAnkang
  * @version 1.0.0
  */
-public class TestLazyBeanConfig {
+public class LazyBeanConfigTest {
 
     private AnnotationConfigApplicationContext ac;
 

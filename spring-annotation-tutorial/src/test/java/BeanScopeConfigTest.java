@@ -12,7 +12,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author LeeAnkang
  * @version 1.0.0
  */
-public class TestBeanScopeConfig {
+public class BeanScopeConfigTest {
 
     private AnnotationConfigApplicationContext ac;
 

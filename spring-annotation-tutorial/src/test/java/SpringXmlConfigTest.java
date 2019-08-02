@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author LeeAnkang
  * @version 1.0.0
  */
-public class TestSpringXmlConfig {
+public class SpringXmlConfigTest {
 
 
     /**

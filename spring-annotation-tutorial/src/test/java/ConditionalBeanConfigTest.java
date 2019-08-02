@@ -13,7 +13,7 @@ import java.util.Map;
  * @author LeeAnkang
  * @version 1.0.0
  */
-public class TestConditionalBeanConfig {
+public class ConditionalBeanConfigTest {
 
     private AnnotationConfigApplicationContext ac;
 
