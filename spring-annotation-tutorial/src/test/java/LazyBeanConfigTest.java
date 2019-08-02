@@ -21,6 +21,11 @@ public class LazyBeanConfigTest {
         System.out.println("IOC init completed...");
     }
 
+    /**
+     * 当bean的作用域为多例的时候，
+     * 在获取的时候，才会创建对象
+     * 在IOC容器关闭的时候，不进行销毁
+     */
     @Test
     public void testBeanLifeCycle() {
         Person child = (Person) ac.getBean("children");
