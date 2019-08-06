@@ -2,6 +2,12 @@ package dev.ankang.design.principle.openclose;
 
 import org.junit.Test;
 
+/**
+ * ** 依赖倒置原则的核心就是：面向抽象编程而不是面向具体的实现编程 **
+ *
+ * 一个软件实体如类 模块和函数应该对扩展开放，对修改关闭
+ *  - 用抽象构建框架，用实现扩展细节
+ */
 public class JavaCourseTest {
 
     @Test
