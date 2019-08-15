@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-annotation-tutorial</module>
+        <module>springmvc-annotation-tutorial</module>
     </modules>
 
     <properties>
