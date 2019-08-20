@@ -3,3 +3,9 @@
 *.iml
 
 */target
+
+.vscode
+
+.project
+
+.settings
